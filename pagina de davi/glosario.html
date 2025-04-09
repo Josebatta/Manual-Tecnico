@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Tecnico</title>
+    <link rel="icon" href="icon.1.ico">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #87CEFA;
+            color: rgb(248, 246, 246);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            position: relative;
+        
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            color: blue;
+        }
+
+        .collapsible {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            background-color: rgba(83, 83, 83, 0.8); /* Transparente */
+            z-index: 999;
+            width: 200px;
+        }
+
+        .collapsible .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #0c0303;
+        }
+
+        .collapsible .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .collapsible .content ul li {
+            padding: 8px 0;
+        }
+
+        .collapsible .content ul li a {
+            color: #3d3c3c;
+            text-decoration: none;
+        }
+
+        .collapsible .content ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .footer-circle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .collapsible {
+                display: none;
+            }
+
+            .collapsible.active {
+                display: block;
+            }
+
+            .collapsible .content {
+                display: none;
+            }
+
+            .collapsible.active .content {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-icon {
+                display: none;
+            }
+
+            .collapsible {
+                display: block;
+                position: static;
+                background-color: transparent;
+                width: auto;
+            }
+
+            .collapsible .content {
+                display: block;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            .collapsible .content ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .collapsible .content ul li {
+                padding: 0;
+            }
+
+            .collapsible .content ul li a {
+                color: rgb(8, 8, 8);
+                padding: 10px;
+                display: block;
+            }
+
+            .collapsible .content ul li a:hover {
+                background-color: #87CEFA;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manual Tecnico</h1>
+       
+        <p></p>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="collapsible">
+            <li>
+                <div class="content">
+                    <ul>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\Manual tecnico.html" class="title">Inicio</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\introduccion.html" class="title">Introducción</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivo general.html"class="title">Objetivos</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivos.html"class="title">Objetivos de aprendizaje</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\contenido.html"class="title">Contenido</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\glosario.html"class="title">Glosario</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\bibliografia.html"class="title">Bibliografía</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\conclusion.html"class="title">Conclusión</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\justificacion.html"class="title">Justificacion</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\recomendaciones.html"class="title">Recomendaciones</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Glosario">
+            <h2>Glosario</h2>
+            <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        dl {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        dt {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        dd {
+            margin: 0 0 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glosario de Mantenimiento Preventivo de Computadoras</h1>
+    
+    <h2>A</h2>
+    <dl>
+        <dt>Antivirus</dt>
+        <dd>Software diseñado para detectar y eliminar virus y otros tipos de malware.</dd>
+    </dl>
+    
+    <h2>B</h2>
+    <dl>
+        <dt>Backup</dt>
+        <dd>Copia de seguridad de los datos para prevenir su pérdida en caso de fallo del sistema.</dd>
+    </dl>
+    
+    <h2>C</h2>
+    <dl>
+        <dt>Controladores</dt>
+        <dd>Programas que permiten la comunicación entre el sistema operativo y el hardware.</dd>
+    </dl>
+    
+    <h2>D</h2>
+    <dl>
+        <dt>Desfragmentación</dt>
+        <dd>Proceso de reorganización de los datos en un disco duro para mejorar su eficiencia.</dd>
+    </dl>
+    
+    <h2>E</h2>
+    <dl>
+        <dt>Eliminación de Archivos Temporales</dt>
+        <dd>Borrado de archivos innecesarios que ocupan espacio en el disco duro.</dd>
+    </dl>
+    
+    <h2>F</h2>
+    <dl>
+        <dt>Firmware</dt>
+        <dd>Software que está permanentemente programado en el hardware de la computadora.</dd>
+    </dl>
+    
+    <h2>H</h2>
+    <dl>
+        <dt>Hardware</dt>
+        <dd>Componentes físicos de una computadora.</dd>
+    </dl>
+    
+    <h2>L</h2>
+    <dl>
+        <dt>Limpieza de Hardware</dt>
+        <dd>Eliminación de polvo y suciedad de los componentes físicos de la computadora.</dd>
+    </dl>
+    
+    <h2>M</h2>
+    <dl>
+        <dt>Monitoreo de Temperatura</dt>
+        <dd>Control de la temperatura de los componentes para evitar el sobrecalentamiento.</dd>
+    </dl>
+    
+    <h2>O</h2>
+    <dl>
+        <dt>Optimización del Sistema</dt>
+        <dd>Conjunto de acciones para mejorar el rendimiento general del sistema operativo.</dd>
+    </dl>
+    
+    <h2>R</h2>
+    <dl>
+        <dt>Revisión de Componentes</dt>
+        <dd>Inspección regular de los componentes internos de la computadora para asegurar su correcto funcionamiento.</dd>
+    </dl>
+    
+    <h2>S</h2>
+    <dl>
+        <dt>Software</dt>
+        <dd>Programas y sistemas operativos que se ejecutan en una computadora.</dd>
+    </dl>
+    
+    <h2>U</h2>
+    <dl>
+        <dt>Actualización de Software</dt>
+        <dd>Instalación de las últimas versiones de programas y sistemas operativos para mejorar la seguridad y el rendimiento.</dd>
+    
+    </main>
+    <div class="footer-circle">
+        <p>©</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var collapsible = document.querySelector(".collapsible");
+            collapsible.classList.toggle("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var headers = document.querySelectorAll(".collapsible .header");
+            headers.forEach(function(header) {
+                header.addEventListener("click", function() {
+                    this.nextElementSibling.classList.toggle("active");
+                    if (this.nextElementSibling.style.display === "block") {
+                        this.nextElementSibling.style.display = "none";
+                    } else {
+                        this.nextElementSibling.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

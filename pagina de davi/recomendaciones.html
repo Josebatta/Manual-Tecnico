@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Tecnico</title>
+    <link rel="icon" href="icon.1.ico">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #87CEFA;
+            color: rgb(248, 246, 246);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            position: relative;
+        
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            color: blue;
+        }
+
+        .collapsible {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            background-color: rgba(83, 83, 83, 0.8); /* Transparente */
+            z-index: 999;
+            width: 200px;
+        }
+
+        .collapsible .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #0c0303;
+        }
+
+        .collapsible .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .collapsible .content ul li {
+            padding: 8px 0;
+        }
+
+        .collapsible .content ul li a {
+            color: #3d3c3c;
+            text-decoration: none;
+        }
+
+        .collapsible .content ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .footer-circle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .collapsible {
+                display: none;
+            }
+
+            .collapsible.active {
+                display: block;
+            }
+
+            .collapsible .content {
+                display: none;
+            }
+
+            .collapsible.active .content {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-icon {
+                display: none;
+            }
+
+            .collapsible {
+                display: block;
+                position: static;
+                background-color: transparent;
+                width: auto;
+            }
+
+            .collapsible .content {
+                display: block;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            .collapsible .content ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .collapsible .content ul li {
+                padding: 0;
+            }
+
+            .collapsible .content ul li a {
+                color: rgb(8, 8, 8);
+                padding: 10px;
+                display: block;
+            }
+
+            .collapsible .content ul li a:hover {
+                background-color: #87CEFA;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manual Tecnico</h1>
+       
+        <p></p>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="collapsible">
+            <li>
+                <div class="content">
+                    <ul>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\Manual tecnico.html" class="title">Inicio</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\introduccion.html" class="title">Introducción</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivo general.html"class="title">Objetivos</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivos.html"class="title">Objetivos de aprendizaje</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\contenido.html"class="title">Contenido</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\glosario.html"class="title">Glosario</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\bibliografia.html"class="title">Bibliografía</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\conclusion.html"class="title">Conclusión</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\justificacion.html"class="title">Justificacion</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\recomendaciones.html"class="title">Recomendaciones</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Recomendaciones">
+            <h2>Recomendaciones</h2>
+            <p>Limpieza Física:</p>
+<p>Desconecta la computadora y todos sus componentes antes de limpiarla.</p>
+<p>Usa aire comprimido para eliminar el polvo de las ventilaciones, el teclado y el interior de la carcasa.</p>
+<p>Limpia la pantalla con un paño suave y productos específicos para pantallas.</p>
+<p>Actualización de Software:</p>
+<p>Mantén el sistema operativo y los programas actualizados para asegurar que tengas las últimas mejoras de seguridad y rendimiento.</p>
+<p>Instala un buen antivirus y asegúrate de que esté siempre actualizado.</p>
+<p>Optimización del Disco Duro:</p>
+<p>Desfragmenta el disco duro regularmente si usas un HDD (no es necesario para SSD).</p>
+<p>Usa herramientas de limpieza de disco para eliminar archivos temporales y otros residuos innecesarios.</p>
+<p>Verifica la salud del disco con herramientas específicas que pueden predecir fallos inminentes.</p>
+<p>Revisión de la Memoria y la CPU:</p>
+<p>Si tu computadora es lenta, considera aumentar la memoria RAM.</p>
+<p>Monitorea el uso de la CPU y cierra aplicaciones que consumen muchos recursos.</p>
+<p>Cuidado de la Batería (para portátiles):</p>
+<p>Evita dejar la portátil conectada a la corriente todo el tiempo.</p>
+<p>Realiza ciclos de carga completos periódicamente.</p>
+<p>Configura opciones de ahorro de energía en el sistema operativo.</p>
+<p>Copias de Seguridad:</p>
+<p>Realiza copias de seguridad de tus archivos importantes regularmente para evitar la pérdida de datos.</p>
+<p>Revisión de Periféricos:</p>
+<p>Asegúrate de que los periféricos como impresoras, escáneres y unidades de almacenamiento externas estén en buen estado y actualizados.</p>
+                      
+        </main>
+        <div class="footer-circle">
+            <p>©</p>
+        </div>
+
+    <script>
+        function toggleMenu() {
+            var collapsible = document.querySelector(".collapsible");
+            collapsible.classList.toggle("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var headers = document.querySelectorAll(".collapsible .header");
+            headers.forEach(function(header) {
+                header.addEventListener("click", function() {
+                    this.nextElementSibling.classList.toggle("active");
+                    if (this.nextElementSibling.style.display === "block") {
+                        this.nextElementSibling.style.display = "none";
+                    } else {
+                        this.nextElementSibling.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

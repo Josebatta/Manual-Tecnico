@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Tecnico</title>
+    <link rel="icon" href="icon.1.ico">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #87CEFA;
+            color: rgb(248, 246, 246);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            position: relative;
+        
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            color: blue;
+        }
+
+        .collapsible {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            background-color: rgba(83, 83, 83, 0.8); /* Transparente */
+            z-index: 999;
+            width: 200px;
+        }
+
+        .collapsible .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #0c0303;
+        }
+
+        .collapsible .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .collapsible .content ul li {
+            padding: 8px 0;
+        }
+
+        .collapsible .content ul li a {
+            color: #3d3c3c;
+            text-decoration: none;
+        }
+
+        .collapsible .content ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .footer-circle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .collapsible {
+                display: none;
+            }
+
+            .collapsible.active {
+                display: block;
+            }
+
+            .collapsible .content {
+                display: none;
+            }
+
+            .collapsible.active .content {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-icon {
+                display: none;
+            }
+
+            .collapsible {
+                display: block;
+                position: static;
+                background-color: transparent;
+                width: auto;
+            }
+
+            .collapsible .content {
+                display: block;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            .collapsible .content ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .collapsible .content ul li {
+                padding: 0;
+            }
+
+            .collapsible .content ul li a {
+                color: rgb(8, 8, 8);
+                padding: 10px;
+                display: block;
+            }
+
+            .collapsible .content ul li a:hover {
+                background-color: #87CEFA;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manual Tecnico</h1>
+       
+        <p></p>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="collapsible">
+            <li>
+                <div class="content">
+                    <ul>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\Manual tecnico.html" class="title">Inicio</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\introduccion.html" class="title">Introducción</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivo general.html"class="title">Objetivos</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\objetivos.html"class="title">Objetivos de aprendizaje</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\contenido.html"class="title">Contenido</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\glosario.html"class="title">Glosario</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\bibliografia.html"class="title">Bibliografía</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\conclusion.html"class="title">Conclusión</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\justificacion.html"class="title">Justificacion</a></li>
+                        <li><a href="C:\Users\USUARIO\Desktop\pagina de davi\recomendaciones.html"class="title">Recomendaciones</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Contenido">
+            <h2>Mantenimiento Preventivo</h2>
+            <p>El concepto específico de este manual es totalmente para la educación y facilitación del mantenimiento del computador tanto preventivo como correctivo, manda información importante a quienes lo leen para que puedan aprender a mantener su computador en buenas condiciones en su hogar, con esto también se refiere que podemos encontrar diversos materiales su forma específica para el mantenimiento del computador.</p>
+            <p>Mantenimiento Preventivo de Hardware y Software
+        
+                <p>Introducción</p>
+                <p>El mantenimiento preventivo es una práctica esencial en el cuidado de los sistemas informáticos, que busca prolongar la vida útil del hardware y asegurar el correcto funcionamiento del software. Este informe detalla las estrategias y procedimientos recomendados para llevar a cabo un mantenimiento preventivo eficaz.</p>
+        
+               <h3>1. Mantenimiento Preventivo de Hardware</h3>
+        <p>El hardware incluye todos los componentes físicos de una computadora, como la CPU, la memoria, los discos duros y los periféricos. El mantenimiento preventivo de hardware se centra en la limpieza, inspección y actualización de los componentes.</P>
+        <h4> 1.1. Limpieza de Componentes</h4>
+        <p>- Importancia: La acumulación de polvo puede causar sobrecalentamiento y fallos en el hardware.</P>
+        <p>- Procedimiento:</P>
+        <p>- Apagar y desconectar el equipo.</P>
+        <p>  - Utilizar aire comprimido para limpiar el interior de la caja.</P>
+        <p>  - Limpiar los periféricos (teclado, mouse) con soluciones adecuadas.</P>
+        <p>[Limpieza de hardware] </P>
+    <img src="lim com.jpg" width="500" height="300" alt="500">
+        <h4>1.2. Inspección Visual</h4>
+        <p>- Importancia: Detectar problemas físicos antes de que se conviertan en fallos.</P>
+        <p>- Procedimiento:</P>
+        <p>  - Revisar los cables en busca de desgaste o daños.</P>
+        <p>  - Comprobar conexiones y componentes sueltos.</P>
+        <p>[Inspección visual]</P>
+    <img src="hardware i.jpg" width="500" height="300" alt="500">
+        <h4> 1.3. Actualización de Componentes</h4>
+        <p>- Importancia: Mantener el hardware actualizado mejora el rendimiento.</P>
+        <p>- Procedimiento:</P>
+        <p>  - Evaluar la necesidad de actualizar RAM, disco duro o tarjeta gráfica.</P>
+        <p>  - Realizar actualizaciones de firmware si es necesario.</P>
+        <p>[Actualización de hardware]</P>
+    <img src="compo.jpg" width="500" height="300" alt="500">    
+        <h3> 2. Mantenimiento Preventivo de Software</h3>
+        <p>El software es el conjunto de programas y sistemas operativos que permiten el funcionamiento del hardware. Su mantenimiento es crucial para evitar fallos y mejorar la eficiencia.</P>
+        <h4> 2.1. Actualizaciones Regulares</h4>
+        <p>- Importancia: Las actualizaciones corrigen errores y mejoran la seguridad.</P>
+        <p>- Procedimiento:</P>
+        <p>  - Configurar actualizaciones automáticas para el sistema operativo y aplicaciones.</P>
+        <p>  - Revisar periódicamente las versiones de software.</P>
+        <p>[Actualización de software]</P>
+    <img src="actua.png" width="400" height="500" alt="500">
+        <h4> 2.2. Copias de Seguridad</h4>
+        <p>- Importancia: Proteger datos importantes de pérdidas.</p>
+        <p>- Procedimiento:</P>
+        <p>  - Implementar un sistema de copias de seguridad programadas.</P>
+        <p>  - Utilizar soluciones de almacenamiento en la nube o discos externos.</P>
+        <p>[Copias de seguridad]</P>
+    <video src="copia.mp4" width="600" height="400" controls loop="1"></video>
+        <h4> 2.3. Limpieza de Archivos</h4>
+        <p>- Importancia: Eliminar archivos innecesarios mejora el rendimiento del sistema.</P>
+        <p>- Procedimiento:</P>
+        <p>  - Utilizar herramientas de limpieza de disco para eliminar archivos temporales y cachés.</P>
+        <p>  - Desinstalar programas que no se utilizan.</P>
+        <p>[Limpieza de archivos]</P>
+    <video src="limpieza bab.mp4" width="600" height="400" controls loop="1"></video>
+        <h3> Conclusión</h3>
+        <p>El mantenimiento preventivo es fundamental para garantizar el buen funcionamiento y la longevidad de los sistemas informáticos. Implementar prácticas regulares de mantenimiento de hardware y software no solo minimiza el riesgo de fallos, sino que también optimiza el rendimiento general del equipo.</P>
+        
+        <p>Recomendaciones Finales:</P>
+        <p>- Establecer un calendario de mantenimiento.</P>
+                <P>- Capacitar al personal en prácticas de mantenimiento.</P>
+                <p>- Evaluar el estado del hardware y software de manera periódica.</p>
+                
+            </main>
+        <div class="footer-circle">
+            <p>©</p>
+        </div>
+
+    <script>
+        function toggleMenu() {
+            var collapsible = document.querySelector(".collapsible");
+            collapsible.classList.toggle("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var headers = document.querySelectorAll(".collapsible .header");
+            headers.forEach(function(header) {
+                header.addEventListener("click", function() {
+                    this.nextElementSibling.classList.toggle("active");
+                    if (this.nextElementSibling.style.display === "block") {
+                        this.nextElementSibling.style.display = "none";
+                    } else {
+                        this.nextElementSibling.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

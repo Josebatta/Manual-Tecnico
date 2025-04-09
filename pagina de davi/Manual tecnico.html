@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico</title>
+    <link rel="icon" href="icon.1.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            width: 100%;
+            background-color: #87CEFA; /* Azul */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.8em;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Diseño flexible para pantallas grandes */
+            gap: 30px;
+            text-align: center;
+            margin: 100px auto; /* Espacio por debajo del encabezado */
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .card {
+            padding: 30px;
+            background-color: #87CEFA;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: #6FBDE3; /* Azul más oscuro al pasar el cursor */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas para crear 2 filas */
+                gap: 10px; /* Menor espacio entre las tarjetas */
+            }
+
+            .card {
+                font-size: 1.2em; /* Texto más pequeño */
+                padding: 15px; /* Menor relleno */
+            }
+
+            footer {
+                width: 50px;
+                height: 50px;
+                bottom: 15px; /* Ajustar posición */
+                right: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Manual Técnico
+    </header>
+    <div class="container">
+        <a href="introduccion.html" class="card">Introducción</a>
+        <a href="objetivo general.html" class="card">Objetivos</a>
+        <a href="objetivos.html" class="card">Aprendizaje</a>
+        <a href="contenido.html" class="card">Contenido</a>
+        <a href="glosario.html" class="card">Glosario</a>
+        <a href="bibliografia.html" class="card">Bibliografía</a>
+        <a href="conclusion.html" class="card">Conclusión</a>
+        <a href="justificacion.html" class="card">Justificación</a>
+        <a href="recomendaciones.html" class="card">Recomendaciones</a>
+    </div>
+    <footer>
+        ©
+    </footer>
+</body>
+</html>
